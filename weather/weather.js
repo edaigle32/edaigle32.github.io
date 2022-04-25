@@ -14,7 +14,7 @@ L.geoJSON(data, {
   style: function(feature){
   var alertColor = 'orange';
   if (feature.properties.severity === 'Severe') alertColor = 'red';
-  if (feature.properties.extreme === 'Extreme') alertColor = 'pink';
+  if (feature.properties.extreme === 'Extreme') alertColor = 'HotPink';
   return { color: alertColor };
 },
  onEachFeature: function(feature, layer) {
